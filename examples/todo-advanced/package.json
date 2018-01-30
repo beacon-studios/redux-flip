@@ -2,9 +2,10 @@
   "name": "redux-flip-example",
   "private": true,
   "dependencies": {
-    "redux-flip": "file:../../"
+    "redux-flip": "file:../.."
   },
   "devDependencies": {
+    "@types/ramda": "^0.25.16",
     "ramda": "^0.25.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"

@@ -63,5 +63,10 @@ export function connect<TState, TOwnProps = {}, TStateProps = {}, TDispatchProps
 ): InferableComponentEnhancerWithProps<TStateProps & TDispatchProps, TOwnProps> {
   const stateMapper = mapStateToProps && createMapStateToProps(mapStateToProps);
   const dispatchMapper = mapDispatchToProps && createMapDispatchToProps(mapDispatchToProps);
-  return originalConnect(stateMapper, dispatchMapper);
+
+  if(dispatchMapper) {
+    return originalConnect(stateMapper, dispatchMapper);
+  } else {
+    return originalConnect(stateMapper);
+  }
 }

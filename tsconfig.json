@@ -2,22 +2,21 @@
   "compilerOptions": {
     "module": "commonjs",
     "moduleResolution": "node",
-    "target": "es6",
-    "lib": ["es2015", "dom"],
+    "target": "es5",
+    "lib": ["es6"],
     "jsx": "react",
     "outDir": "./lib",
+    "types": ["react-redux"],
     "declaration": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
     "noUnusedLocals": true,
     "removeComments": true,
     "sourceMap": true,
-    "strictNullChecks": false,
+    "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "suppressExcessPropertyErrors": false,
-    "suppressImplicitAnyIndexErrors": true
+    "suppressImplicitAnyIndexErrors": false
   },
   "include": [
     "src/**/*.ts"
