@@ -1,0 +1,16 @@
+{
+  "name": "redux-flip",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "devDependencies": {
+    "jest": "^22.1.4",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "@types/react-redux": "^5.0.14",
+    "@types/redux": "^3.6.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
+  }
+}
